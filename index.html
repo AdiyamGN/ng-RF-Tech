@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngContacts">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RF Technologies</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+  <div class="nav-wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+					</button>
+        	<a class="navbar-brand" href="index.html">Contacts</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ui-view></ui-view>
+
+  
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!-- Angular UI Router -->
+	<script src="https://cdn.jsdelivr.net/angular.ui-router/1.0.1/angular-ui-router.min.js"></script>
+  <script src="app.js"></script>
+  <script src="config.js"></script>
+  <script src="controllers/personsController.js"></script>
+  <script src="controllers/persondetailController.js"></script>
+  <script src="services/dataservice.js"></script>
+</body>
+</html>
