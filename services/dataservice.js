@@ -10,6 +10,16 @@
 
     function DataService() {
       var dataObj = {
+        peopleData: function() {  
+          $http.get('../generated.json').then(successCallback, errorCallback);
+
+          function successCallback(response){
+            return response.data;
+          }
+          function errorCallback(error){
+            console.log('Json not loaded');
+          }
+        },
         personsData: personsData,
         selectedPerson: null,
 				getPerson: function(index) {
@@ -37,7 +47,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     
+
     var personsData = [
   {
     "_id": "5978c6f04fe683eeebf3288f",
@@ -1167,3 +1189,7 @@
 ]
 
 })();
+
+
+
+
