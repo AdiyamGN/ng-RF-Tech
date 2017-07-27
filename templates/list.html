@@ -1,8 +1,8 @@
 <div class="container-fluid person-list" ng-controller="personsListController as list">
   <div class="row">
-    <div class="col-sm-6" ng-repeat="person in list.data" 
-         ng-click="list.changeActivePerosn(person)"
-         ui-sref="detailList({index:person.index})">
+    <div class="col-sm-6" 
+          ng-repeat="person in list.data" 
+          ui-sref="detailList({index:person.index})"> 
       <div class="well well-sm">
         <div class="row">
           <div class="col-md-3">

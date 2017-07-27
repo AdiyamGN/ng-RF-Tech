@@ -1,44 +1,4 @@
-(function() {
-
-  'use strict';
-
-  angular
-    .module('ngContacts')
-    .factory('DataService', DataService);
-
-
-
-    function DataService() {
-      var dataObj = {
-        personsData: personsData,
-        selectedPerson: null,
-				getPerson: function(index) {
-					for(var i = 0; i < dataObj.personsData.length; i++) {
-						var obj = dataObj.personsData[i];
-						if(obj.index == index) {
-							return obj;
-						}
-					}
-				}
-      };
-
-      return dataObj;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    var personsData = [
+[
   {
     "_id": "5978c6f04fe683eeebf3288f",
     "index": 0,
@@ -1165,5 +1125,3 @@
     "favoriteFruit": "apple"
   }
 ]
-
-})();
